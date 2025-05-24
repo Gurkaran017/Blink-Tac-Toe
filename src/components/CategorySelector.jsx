@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { EmojiCategories } from '../constants'
 import useSound from '../hooks/useSound'
+import click from '../../src/assets/sounds/click.mp3'
 
 export default function CategorySelector({ categories, onStart, onHelp }) {
   const [player1Category, setPlayer1Category] = useState(null)
   const [player2Category, setPlayer2Category] = useState(null)
   const [activePanel, setActivePanel] = useState('player1') // For mobile view
-  const playClickSound = useSound('../../src/assets/sounds/click.mp3', 0.2)
+  // const playClickSound = useSound('../../src/assets/sounds/click.mp3', 0.2)
+   const playClickSound = useSound(click, 0.2)
 
   const handleStart = () => {
     playClickSound()
