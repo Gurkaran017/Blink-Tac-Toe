@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { EmojiCategories, WinningPatterns } from '../constants'
 import useSound from './useSound'
+import place from '../../src/assets/sounds/place.mp3'
+import vanish from '../../src/assets/sounds/vanish.mp3'
+import win from '../../src/assets/sounds/win.mp3'
 
 export default function useGameLogic(player1Category, player2Category) {
   const [board, setBoard] = useState(Array(9).fill(null).map(() => ({ emoji: null, player: null, timestamp: null })))
@@ -14,9 +17,9 @@ export default function useGameLogic(player1Category, player2Category) {
   const hasProcessedWin = useRef(false)
 
   // Sound effects
-  const playPlaceSound = useSound('../../src/assets/sounds/place.mp3', 0.3)
-  const playVanishSound = useSound('../../src/assets/sounds/vanish.mp3', 0.3)
-  const playWinSound = useSound('../../src/assets/sounds/win.mp3', 0.5)
+  const playPlaceSound = useSound(place, 0.3)
+  const playVanishSound = useSound(vanish, 0.3)
+  const playWinSound = useSound(win, 0.5)
 
   const getRandomEmoji = (player) => {
     const category = player === 'player1' ? player1Category : player2Category
