@@ -1,8 +1,9 @@
 import { EmojiCategories } from '../constants'
 import useSound from '../hooks/useSound'
+import click from '../../src/assets/sounds/click.mp3'
 
 export default function ScoreBoard({ scores, currentCategories, onRestart, onHelp }) {
-  const playClickSound = useSound('../../src/assets/sounds/click.mp3', 0.2)
+  const playClickSound = useSound(click, 0.2)
   return (
     <div className="w-full max-w-md bg-purple-700 bg-opacity-50 rounded-xl p-4 mb-6 shadow-lg backdrop-blur-sm flex justify-between items-center">
       <div className="flex items-center space-x-4">
