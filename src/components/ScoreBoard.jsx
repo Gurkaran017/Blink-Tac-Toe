@@ -32,12 +32,16 @@ export default function ScoreBoard({ scores, currentCategories, onRestart, onHel
           Help
         </button>
         </div>
-        <button 
+        <div onClick={() => {
+            playClickSound()        
+          }}>
+          <button 
           onClick={onRestart}
           className="px-3 py-1 bg-purple-900 rounded-lg hover:bg-purple-800 transition text-sm"
         >
           New Game
         </button>
+        </div>
       </div>
     </div>
   )
