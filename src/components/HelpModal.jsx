@@ -1,10 +1,11 @@
 import useSound from '../hooks/useSound'
+import click from '../../src/assets/sounds/click.mp3'
 
 export default function HelpModal({ isOpen, onClose }) {
 
   if (!isOpen) return null
 
-  const playClickSound = useSound('../../src/assets/sounds/click.mp3', 0.2)
+  const playClickSound = useSound(click, 0.2)
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
