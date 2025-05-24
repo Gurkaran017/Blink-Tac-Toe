@@ -156,7 +156,7 @@ export default function App() {
           whileHover={{ scale: 1.05 }}
         >
           <p className="mb-1">Use the same device or share with a friend!</p>
-          <p className="text-xs opacity-70">© {new Date().getFullYear()} Blink Tac Toe</p>
+          <p className="text-xs opacity-70">© {new Date().getFullYear()} Blink Tac Toe Made By Gurkaran Singh</p>
         </motion.footer>
       </motion.div>
     </div>
