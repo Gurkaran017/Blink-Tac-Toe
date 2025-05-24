@@ -27,5 +27,3 @@ Players choose from:
 - [ ] Hover over a category to see all its emojis (🐶🐱🐭)
 
 ---
-
-*Built for [Company Name]'s frontend challenge - had fun making it!* 😊
