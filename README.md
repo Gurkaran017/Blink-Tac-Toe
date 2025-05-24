@@ -1,23 +1,31 @@
-# Blink Tac Toe 🎮✨
+# Blink Tac Toe 🎮
 
-A fun twist on classic Tic Tac Toe where emojis vanish! Built with React, Vite, and Tailwind CSS.
+A fun twist on Tic Tac Toe where emojis disappear after 3 turns!
 
+## Tech Stack
+- **React** with Vite (fast builds)
+- **Tailwind CSS** (stylish design)
+- Custom hooks for game logic
 
-## Features 🌟
-- **Emoji Categories**: Choose from animals, foods, sports & more!
-- **Vanishing Rule**: Max 3 emojis per player (oldest disappears!)
-- **Winning Animations**: Glowing lines show the winning combo
-- **Sounds**: Satisfying clicks, pops, and win effects
-- **Mobile-Friendly**: Works on phones & tablets
+## Emoji Categories
+Players choose from:
+- 🐶 Animals (Dog, Cat, Monkey...)  
+- 🍕 Food (Pizza, Burger, Donut...)  
+- ⚽ Sports (Soccer, Basketball, Tennis...)  
+- ✈️ Travel (Plane, Car, Rocket...)  
+- ☀️ Weather (Sun, Rain, Rainbow...)
 
-## How to Play 📖
-1. Players pick emoji categories
-2. Take turns placing random emojis
-3. After 3 emojis, your oldest one vanishes!
-4. First to 3-in-a-row wins!
+## Vanishing Feature
+- Each player can only have **3 emojis** at once  
+- When placing a 4th emoji:  
+  1. Oldest emoji disappears (like a queue)  
+  2. New emoji takes its place  
+- **Bonus**: Shows glowing borders on newest/oldest emojis
 
-## Tech Used 💻
-- ⚡ **Vite** - Super fast development
-- ⚛️ **React** - Smooth UI updates
-- 🎨 **Tailwind CSS** - Beautiful styling
-- 🔊 **Custom Sound Hook** - For game effects
+## With More Time, I'd Add:
+- [ ] Online multiplayer  
+- [ ] Hover over a category to see all its emojis (🐶🐱🐭)
+
+---
+
+*Built for [Company Name]'s frontend challenge - had fun making it!* 😊
