@@ -4,6 +4,7 @@ import Cell from './Cell'
 import WinningLine from './WinningLine'
 import useGameLogic from '../hooks/useGameLogic'
 import useSound from '../hooks/useSound'
+import click from '../../src/assets/sounds/click.mp3'
 
 export default function Board({ player1Category, player2Category, onWin, onRestart }) {
   const {
@@ -17,7 +18,7 @@ export default function Board({ player1Category, player2Category, onWin, onResta
   } = useGameLogic(player1Category, player2Category)
 
   const [hasCalledOnWin, setHasCalledOnWin] = useState(false)
-  const playClickSound = useSound('../../src/assets/sounds/click.mp3', 0.2)
+  const playClickSound = useSound(click, 0.2)
 
   useEffect(() => {
     if (winner && !hasCalledOnWin) {
